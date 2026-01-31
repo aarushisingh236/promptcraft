@@ -1,16 +1,62 @@
-# React + Vite
+# PromptCraft – AI Prompt Playground 🧠✨
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+PromptCraft is a frontend React application that simulates how AI responses change based on different prompt parameters such as **temperature, creativity, role, and formality**.  
+It allows users to experiment with prompts, generate mock AI responses, and save prompt history for reuse.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+- 📝 Enter custom prompts
+- 🎛 Adjust response parameters:
+  - Temperature
+  - Creativity
+  - Formality (Casual / Neutral / Formal)
+  - Role (Teacher / Developer / Poet / Friend)
+- 🤖 Generates simulated AI responses (mock logic)
+- 💾 Save favorite prompts
+- 🕒 View prompt history (last 10 prompts)
+- 📋 Copy generated responses to clipboard
+- 🎨 Clean and modern UI using Tailwind CSS
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+---
 
-## Expanding the ESLint configuration
+## 🛠 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React (Vite)
+- Tailwind CSS
+- JavaScript
+- LocalStorage (for persistence)
+
+---
+
+## 🧠 How It Works
+
+The application uses a mock response generator function that dynamically builds AI-like responses based on user-selected parameters:
+
+- **Role** determines tone (Teacher, Poet, Developer, Friend)
+- **Formality** controls language style
+- **Temperature & Creativity** influence randomness and expression
+
+This allows users to understand how different prompt settings affect AI responses.
+
+---
+
+## 📦 Installation & Run Locally
+
+```bash
+git clone https://github.com/aarushisingh236/promptcraft.git
+cd promptcraft
+npm install
+npm run dev
+```
+
+---
+
+## 🌱 Future Improvements
+
+- Compare two prompts side-by-side
+- Animations using Framer Motion
+- Real AI API integration
+- Theme customization
+- Export responses
