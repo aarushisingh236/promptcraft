@@ -26,7 +26,7 @@ It allows users to experiment with prompts, generate mock AI responses, and save
 - React (Vite)
 - Tailwind CSS
 - JavaScript
-- LocalStorage (for persistence)
+- LocalStorage
 
 ---
 
